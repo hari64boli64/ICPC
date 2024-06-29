@@ -1,0 +1,44 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++ アクティブなファイルのビルド",
+            "command": "/usr/bin/g++-13",
+            "args": [
+                "${file}",
+                "-g",
+                "-std=c++23",
+                "-std=gnu++23",
+                "-Dhari64",
+                "-Wall",
+                "-Wextra",
+                "-Wfatal-errors",
+                "-Wno-unknown-pragmas",
+                "-Wno-unused",
+                "-Wno-unused-parameter",
+                "-Wno-sign-compare",
+                "-fdiagnostics-color=always",
+                // "-fsanitize=leak",
+                "-D_GLIBCXX_DEBUG",
+                // "-DNDEBUG",
+                // "-O1",
+                // "-O2",
+                // "-O3",
+                "-I/home/hari64boli64/Cpp",
+                "-I/home/hari64boli64/ac-library-master",
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "デバッガーによって生成されたタスク。"
+        }
+    ],
+    "version": "2.0.0"
+}
