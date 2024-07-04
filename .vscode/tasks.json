@@ -3,8 +3,8 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++ アクティブなファイルのビルド",
-            // "command": "/usr/bin/g++-13",
-            "command": "/usr/bin/g++",
+            "command": "/usr/bin/g++-13",
+            // "command": "/usr/bin/g++",
             "args": [
                 "${file}",
                 "-g",

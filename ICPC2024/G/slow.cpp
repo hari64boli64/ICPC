@@ -29,16 +29,20 @@ template <class T> bool chmax(T& a, const T& b) { return a < b ? a = b, 1 : 0; }
 template <class T> bool chmin(T& a, const T& b) { return a > b ? a = b, 1 : 0; }
 // clang-format on
 
+void solve() {
+  ll N;
+  cin >> N;
+  cout << fixed << setprecision(16) << sqrt(N * 2) / 2 << endl;
+}
+
 int main() {
   cin.tie(0);
   ios::sync_with_stdio(false);
 
-  int m;
-  cin >> m;
-  while (m--) {
-    ll N;
-    cin >> N;
-    cout << fixed << setprecision(16) << sqrt(N * 2) / 2 << endl;
+  int numOfTestCases;
+  cin >> numOfTestCases;
+  while (numOfTestCases--) {
+    solve();
   }
 
   return 0;

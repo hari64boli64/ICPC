@@ -38,6 +38,10 @@ int main() {
   while (m--) {
     ll N;
     cin >> N;
+    if (N == 1) {
+      cout << -1 << endl;
+      continue;
+    }
     cout << fixed << setprecision(16) << sqrt(N * 2) / 2 << endl;
   }
 
