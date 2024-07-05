@@ -5,4 +5,5 @@ do
     cp util/template.cpp ICPC2024/$char/slow.cpp
     cp util/check.py ICPC2024/$char/check_$char.py
     cp util/make_testcase.py ICPC2024/$char/make_testcase.py
+    touch ICPC2024/$char/${char}0
 done

@@ -9,7 +9,7 @@ then
     /usr/bin/g++-13 ICPC2024/$char/$char.cpp -o ICPC2024/$char/a.out -std=c++23 -std=gnu++23 -Dhari64 -Wall -Wextra -Wfatal-errors -Wno-unknown-pragmas -Wno-unused -Wno-unused-parameter -Wno-sign-compare -fdiagnostics-color=always -O3 -I/home/hari64boli64/Cpp -I/home/hari64boli64/ac-library-master
 fi
 
-read -p "Which test case? (1-3) " input
+read -p "Which test case? (0-3) " input
 num=$input
 
 echo "Running ICPC2024/$char/a.out with ICPC2024/$char/${char}${num}"

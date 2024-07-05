@@ -15,7 +15,7 @@ if c.returncode != 0:
     print(f"NG: compile failed {char}.cpp")
     exit()
 
-print("now compiling slow.cpp")
+print("now compiling slow.cpp...")
 c = sb.run(base + f"-o g.out slow.cpp", shell=True)
 if c.returncode != 0:
     print("NG: compile failed slow.cpp")
