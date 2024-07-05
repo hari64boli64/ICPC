@@ -6,7 +6,7 @@ char=$(echo $input | tr '[:lower:]' '[:upper:]')
 read -r -p "Do Compile? [Y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
-    /usr/bin/g++ ICPC2024/$char/$char.cpp -std=c++23 -std=gnu++23 -Dhari64 -Wall -Wextra -Wfatal-errors -Wno-unknown-pragmas -Wno-unused -Wno-unused-parameter -Wno-sign-compare -fdiagnostics-color=always -O3 -I/home/hari64boli64/Cpp -I/home/hari64boli64/ac-library-master
+    /usr/bin/g++-13 ICPC2024/$char/$char.cpp -o ICPC2024/$char/a.out -std=c++23 -std=gnu++23 -Dhari64 -Wall -Wextra -Wfatal-errors -Wno-unknown-pragmas -Wno-unused -Wno-unused-parameter -Wno-sign-compare -fdiagnostics-color=always -O3 -I/home/hari64boli64/Cpp -I/home/hari64boli64/ac-library-master
 fi
 
 read -p "Which test case? (1-3) " input
